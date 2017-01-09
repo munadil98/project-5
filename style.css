@@ -83,6 +83,7 @@
 
 	.photo img{
 		width: 100%;
+		padding: 14px 0px;
 	}
 
 	.svclarge{
@@ -96,7 +97,7 @@
 		bottom: 1%;
 		/*left: 3%;*/
 		/*color: white;*/
-		background: #514a40;
+		/*background: #514a40;*/
 		opacity: 0.9;
 		/*filter: alpha(opacity=90); /* For IE8 and earlier */*/
 		height: 100px;
