@@ -1,46 +1,67 @@
 # Empty CSS file for your own CSS
 
-.hdsection {
-	background-image: url(bgim.png);
-	margin-top: 500px;
-	padding-top: 30px;
-	/*margin: 100px 10px;*/
-	border: 2px solid black;
-
-
+.body{
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
-.hdsection ul{
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.headersection{
+
+	background-image: url(bgim.png);
+	position: relative;
+}
+.social {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto
+	border: 1px solid block;
+}
+.social ul{
 	list-style: none;
 	float: right;
 }
 
-
-
-@media (max-width: 768px){
-	.hdsection{
-		font-size: 12px;
-	}
-
-	.hdsection ul li {
+.social ul li {
 		display: inline-block;
 		padding: 10px;
+	}
+
+@media (max-width: 768px){
+	.headersection{
+		font-size: 16px;
+	}
+
+	.brand{
+		padding-left: 0px;
+		/*border: 2px solid red;*/
+	}
+
+	.social ul {
+		padding: 0px;
 		margin: 0;
-		/*border: 2px solid black;*/
-
-
+		float: right;
+		/*border: 2px solid red;*/
 	}
 
-	.hdsection img{
-		/*max-width: 8px;*/
-	}
 
 
 }
 
 @media (min-width: 769px){
 
-	.hdsection ul li {
+	.headersection ul li {
 		display: inline-block;
 		padding-left: 10px;
 		/*border: 2px solid black;*/
@@ -48,118 +69,139 @@
 	}
 }
 
+.slidersection{
+	background-image: url(bgim.png);
+	background-repeat: no-repeat;
+	background-size: 100% 50%;
+}
 
-	.slidersection{
-		clear: both;
-		margin: 30px 0px;
-		/*border: 2px solid red;*/
-
-	}
-	.slidersection img{
-		widht: 300px;
-	}
-
-	.carousel-indicators{
+.carousel-indicators{
 		bottom:-35px;
-
-	}
-
-	.item img {
-	  width:100%
-	}
-	.carousel-indicators li {
-	  background-color: #dddddd;
-	}
-	.carousel-indicators .active {
-	  background-color: #959595;
-	}
-
-	.photo{
-		/*background-color: #eaeaea;*/
-		background-image: url(bgim.png);
-		margin: 40px 0;
-		padding: 40px 0;
-	}
-
-	.photo img{
-		width: 100%;
-		padding: 14px 0px;
-	}
-
-	.svclarge{
-		position: relative;
-
-	}
-
-	.sldr{
-		font-size: 14px;
-		position: absolute;
-		bottom: 1%;
-		/*left: 3%;*/
-		/*color: white;*/
-		/*background: #514a40;*/
-		opacity: 0.9;
-		/*filter: alpha(opacity=90); /* For IE8 and earlier */*/
-		height: 100px;
-		width: 95%;
-	}
-
-	.formdiv{
-		/*border: 2px solid black;*/
-		width: 50%;
-
-	}
-	
-	@media (max-width: 768px){
-		.formdiv{
-		/*border: 2px solid black;*/
-		width: 100%;
-
-		}
 }
 
 
+.item img {
+  width:100%
+}
+.carousel-indicators li {
+  background-color: #dddddd;
+}
+.carousel-indicators .active {
+  background-color: #959595;
+}
 
-	.formdiv input, textarea{
-		background-color: #ebebeb;
-		width: 100%;
-		
-	}
+.carousel-caption p{
+	margin-bottom: -5px;
+}
+
+.photo{
+	/*background-color: #eaeaea;*/
+	background-image: url(bgim.png);
+	margin: 40px 0;
+	padding: 40px 0;
+}
+
+.photo img{
+	width: 100%;
+	padding: 14px 0px;
+}
+
+.svclarge{
+	position: relative;
+
+}
+
+.sldr{
+	font-size: 14px;
+	position: absolute;
+	bottom: 1%;
+	/*left: 3%;*/
+	/*color: white;*/
+	/*background: #514a40;*/
+	opacity: 0.9;
+	/*filter: alpha(opacity=90); /* For IE8 and earlier */*/
+	height: 100px;
+	width: 95%;
+}
+
+
+.formdiv input, textarea{
+	background-color: #ebebeb;
+	width: 100%;
+	
+}
+.formdiv button{
+	background-color: #ebebeb;
+	width: 20%;
+}
+
+@media (max-width: 768px){
+
 	.formdiv button{
-		background-color: #ebebeb;
-		width: 20%;
+	background-color: #ebebeb;
+	width: 40%;
+	margin-bottom: 30px;
 	}
+	.formdiv{
+		font-size: 12px;
 
-	@media (max-width: 768px){
-
-		.formdiv button{
-		background-color: #ebebeb;
-		width: 40%;
-		margin-bottom: 30px;
-		}
-		.formdiv{
-			font-size: 12px;
-		}
+	}
+	.formdiv img{
+		width: 120px;
 
 	}
 
-	.form-profile{
-		padding-bottom: 53px;
-
-		/*height: 100px;*/
-		border-bottom: 2px solid #c7c7c7;
+	.formdiv h3{
+		font-size: 16px;
+		font-weight: bold;
+		margin-left: 20px;
+		margin-top: 0;
 	}
 
+	.formdiv p{
+		margin-left: 20px;
+		font-size: 12px;
+	}
+
+}
+
+.form-profile{
+	padding-bottom: 53px;
+
+	/*height: 100px;*/
+	border-bottom: 2px solid #c7c7c7;
+}
+
+.footersection{
+	margin: 30px 0;
+}
+.footersection ul{
+	list-style: none;
+	float: right;
+}
+
+.footersection ul li {
+	display: inline-block;
+	padding-left: 0%;
+	margin-left: 0%;
+}
+
+@media (max-width: 320px){
 	.footersection{
-		margin: 30px 0;
+		font-size: 9px;
 	}
-	.footersection ul{
-		list-style: none;
-		float: right;
+	.copyright{
+		display: block;
+	}
+	.footersection ul {
+
+		/*border: 2px solid red;*/
+		padding: 0 auto;
+		float: left;
+	}
+	.footersection img{
+		/*width: 10px;*/
 	}
 
-	.footersection ul li {
-		display: inline-block;
-		padding-left: 10px;
-	}
 
+}
